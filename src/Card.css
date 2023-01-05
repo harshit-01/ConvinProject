@@ -1,0 +1,162 @@
+.container{ 
+    height: 100%;
+}
+.userCard{
+    width: 100%;
+    height:50%;
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+    margin-top:50px;
+    width:60%;
+    height: 275px;
+    border-radius:5px;
+    background-color: #fff;
+    box-shadow: 4px 4px grey;
+}
+.cardHead{
+    margin: 5px;
+    height: 50px;
+    width: 100%;
+    margin-left: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+    color: rgb(14, 104, 182);
+    font-size:1.5em;
+}
+.line{
+    background-color:rgb(125, 124, 124);
+    height: 2px;
+    width: 100%;
+}
+.cardBody{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items:center; */
+    margin:5px;
+    margin-top: 10px;
+}
+.userImage{
+    margin-right: 15px;
+    width:25%;
+    height: 80%;
+}
+.userInfo{
+    word-break: break-word;
+}
+@media(max-width:600px){
+    .cardBody{
+        flex-direction: column;
+        align-items: center;
+    }
+    .userImage{
+        width: 80%;
+        margin-right: 0;
+    }
+    .userInfo{
+        width: 100%;
+        text-align: center;
+    }
+}
+.userContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top: 15px;
+}
+.btn{
+    background: white;
+    border: 2px solid grey;
+    width: 40px;
+    margin: 2px;
+    padding:5px;
+    border-radius:2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background:rgb(16, 64, 195);
+    border: 2px solid rgb(16, 64, 195);
+    color: floralwhite;
+    font-weight: bold;
+}
+
+.userCardSkeleton{
+    width: 100%;
+    height:50%;
+}
+
+.cardBodySkeleton{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardSkeleton{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+    margin-top:50px;
+    width:60%;
+    min-height: 275px;
+    border-radius:5px;
+    background-color: #fff;
+    box-shadow: 4px 4px grey;
+}
+
+.cardHeadSkeleton{
+    margin: 5px;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 0px;
+}
+.lineRect{
+    background-color:rgb(233, 231, 231);
+    width:95%;
+    height:20px;
+    border-radius: 5px;
+    font-weight: 18px;
+    font-weight: bold;
+    padding:5px
+}
+.rectangle{
+    margin:15px;
+    width : 150px;
+    height: 190px;
+    background-color:rgb(206, 204, 204);
+}
+.rectSkeleton{
+    background-color:rgb(206, 204, 204);
+    width:100%;
+    height:8px;
+    border-radius: 5px;
+    color:black;
+    padding:5px;
+    font-weight: bold;
+}
+@media(max-width:900px){
+    .cardSkeleton{
+        height: 500px;
+    }
+    .cardHeadSkeleton{
+        height: 70px;
+    }
+    .cardBodySkeleton{
+        justify-content:center;
+    }
+    .lineRect{
+        height:50px;
+    }
+}
+@media(max-width:400px){
+    .lineRect{
+        height:70px;
+    }
+}
+span{
+    width:65%;
+}
