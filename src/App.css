@@ -15,7 +15,7 @@ body{
 .loadingText{
     position : absolute;
     animation: none;
-    top: calc(49% - 32px);
+    top: calc(49% - 15px);
     left: calc(47%);
     font-weight: bold;
 }
@@ -27,8 +27,8 @@ body{
 }
 @media (min-width: 1000px) {
     .loadingText{
-        top: calc(40% - 16px);
-        left: calc(47%);
+        top: calc(42% - 16px);
+        left: calc(48%);
     }
 }
 @media (min-width: 1600px) {

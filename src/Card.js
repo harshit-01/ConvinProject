@@ -22,7 +22,7 @@ function Card({user}) {
                     </div>
                     <div className= "line"></div>
                     <div className="cardBody">
-                        <img src={singleUser.avatar} className="userImage"></img>
+                        {singleUser?.avatar ? <img src={singleUser.avatar} className="userImage"></img>  : <img className="rectangle"></img>}
                         <p className="userInfo"><b>Email :</b> {singleUser?.email ? singleUser.email : "NA"}</p>
                     </div>
                 </div>
